@@ -33,6 +33,7 @@ enum Alphabet
 int main()
 {
     Result workResult = Dowork();
+    std::cout << static_cast<int>(workResult);
     if (workResult == Result::SUCCESS)
     {
 
