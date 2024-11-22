@@ -3,8 +3,22 @@
 
 #include <iostream>
 
+enum Result
+{
+    SUCCESS,
+    FAIL,
+    ERROR_WRITE,
+    ERROR_READ,
+
+};
+
+int Dowork()
+{
+    return 3;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+
 }
 
