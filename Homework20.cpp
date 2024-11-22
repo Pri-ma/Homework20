@@ -3,22 +3,45 @@
 
 #include <iostream>
 
-enum Result
+enum class Result
 {
     SUCCESS,
     FAIL,
     ERROR_WRITE,
-    ERROR_READ,
+    ERROR_READ
 
 };
 
-int Dowork()
+enum class Another
 {
-    return 3;
+    WORK,
+    SUCCESS
+};
+
+Result Dowork()
+{
+    return Result::SUCCESS;
 }
+
+enum Alphabet
+{
+    A,
+    B,
+    C
+};
 
 int main()
 {
+    Result workResult = Dowork();
+    if (workResult == Result::SUCCESS)
+    {
 
+    }
+
+    Another anotherRes = Another::WORK;
+    //if (workResult == anotherRes)
+    {
+
+    }
 }
 
